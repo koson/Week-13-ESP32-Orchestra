@@ -30,7 +30,9 @@ typedef enum {
     SONG_TWINKLE_STAR = 1,  // Twinkle Twinkle Little Star (4 parts)
     SONG_HAPPY_BIRTHDAY = 2, // Happy Birthday (3 parts)  
     SONG_CANON_IN_D = 3,    // Canon in D (4 parts)
-    SONG_MARY_LAMB = 4      // Mary Had a Little Lamb (2 parts)
+    SONG_MARY_LAMB = 4,     // Mary Had a Little Lamb (2 parts)
+    SONG_THAILAND = 52,     // Thailand (4 parts)
+    SONG_MOVIE_THEMES___TITANIC___MY_HEART_WILL_GO_ON_TECHNO_MIX = 57  // Titanic (4 parts)
 } song_id_t;
 
 // Musician Parts (แต่ละ ESP32 จะรับผิดชอบ part ใดpart หนึ่ง)
@@ -55,24 +57,92 @@ typedef struct {
 } __attribute__((packed)) orchestra_message_t;
 
 // Note definitions (MIDI note numbers)
-#define NOTE_C4  60   // Middle C (Do)
-#define NOTE_D4  62   // D (Re)  
-#define NOTE_E4  64   // E (Mi)
-#define NOTE_F4  65   // F (Fa)
-#define NOTE_G4  67   // G (Sol)
-#define NOTE_A4  69   // A (La)
-#define NOTE_B4  71   // B (Ti)
-#define NOTE_C5  72   // High C (Do)
+// Octave 0
+#define NOTE_DS0  15   // D#0
+#define NOTE_FS0  18   // F#0
+#define NOTE_GS0  20   // G#0
+#define NOTE_A0   21   // A0
+#define NOTE_B0   23   // B0
 
-#define NOTE_C3  48   // Low C
-#define NOTE_D3  50   // Low D
-#define NOTE_E3  52   // Low E
-#define NOTE_F3  53   // Low F
-#define NOTE_G3  55   // Low G
-#define NOTE_A3  57   // Low A
-#define NOTE_B3  59   // Low B
+// Octave 1
+#define NOTE_CS1  25   // C#1
+#define NOTE_DS1  27   // D#1
+#define NOTE_E1   28   // E1
+#define NOTE_FS1  30   // F#1
+#define NOTE_G1   31   // G1
+#define NOTE_GS1  32   // G#1
+#define NOTE_A1   33   // A1
+#define NOTE_B1   35   // B1
 
-#define NOTE_REST 0   // เงียบ (ไม่มีเสียง)
+// Octave 2  
+#define NOTE_C2   36   // C2
+#define NOTE_CS2  37   // C#2
+#define NOTE_D2   38   // D2
+#define NOTE_DS2  39   // D#2
+#define NOTE_E2   40   // E2
+#define NOTE_F2   41   // F2
+#define NOTE_FS2  42   // F#2
+#define NOTE_G2   43   // G2
+#define NOTE_GS2  44   // G#2
+#define NOTE_A2   45   // A2
+#define NOTE_AS2  46   // A#2
+#define NOTE_B2   47   // B2
+
+// Octave 3
+#define NOTE_C3   48   // Low C
+#define NOTE_CS3  49   // C#3
+#define NOTE_D3   50   // Low D
+#define NOTE_DS3  51   // D#3
+#define NOTE_E3   52   // Low E
+#define NOTE_F3   53   // Low F
+#define NOTE_FS3  54   // F#3
+#define NOTE_G3   55   // Low G
+#define NOTE_GS3  56   // G#3
+#define NOTE_A3   57   // Low A
+#define NOTE_AS3  58   // A#3
+#define NOTE_B3   59   // Low B
+
+// Octave 4
+#define NOTE_C4   60   // Middle C (Do)
+#define NOTE_CS4  61   // C#4
+#define NOTE_D4   62   // D (Re)  
+#define NOTE_DS4  63   // D#4
+#define NOTE_E4   64   // E (Mi)
+#define NOTE_F4   65   // F (Fa)
+#define NOTE_FS4  66   // F#4
+#define NOTE_G4   67   // G (Sol)
+#define NOTE_GS4  68   // G#4
+#define NOTE_A4   69   // A (La)
+#define NOTE_AS4  70   // A#4
+#define NOTE_B4   71   // B (Ti)
+
+// Octave 5
+#define NOTE_C5   72   // High C (Do)
+#define NOTE_CS5  73   // C#5
+#define NOTE_D5   74   // D5
+#define NOTE_DS5  75   // D#5
+#define NOTE_E5   76   // E5
+#define NOTE_F5   77   // F5
+#define NOTE_FS5  78   // F#5
+#define NOTE_G5   79   // G5
+#define NOTE_GS5  80   // G#5
+#define NOTE_A5   81   // A5
+#define NOTE_AS5  82   // A#5
+#define NOTE_B5   83   // B5
+
+// Octave 6
+#define NOTE_C6   84   // C6
+#define NOTE_CS6  85   // C#6
+#define NOTE_DS6  87   // D#6
+#define NOTE_E6   88   // E6
+#define NOTE_F6   89   // F6
+#define NOTE_FS6  90   // F#6
+
+// Octave 7
+#define NOTE_C7   96   // C7
+#define NOTE_CS7  97   // C#7
+
+#define NOTE_REST 0    // เงียบ (ไม่มีเสียง)
 
 // GPIO Pins
 #define BUZZER_PIN    18    // Pin สำหรับ Buzzer/Speaker

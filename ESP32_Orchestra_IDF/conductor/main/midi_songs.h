@@ -1,30 +1,7 @@
 #ifndef MIDI_SONGS_H
 #define MIDI_SONGS_H
 
-#include "orchestra_common.h"
-
-// Note Event Structure for Orchestra
-typedef struct {
-    uint8_t note;           // MIDI note number (0 = rest)
-    uint16_t duration_ms;   // ความยาวโน๊ต
-    uint16_t delay_ms;      // หน่วงเวลาก่อนโน๊ตถัดไป
-} note_event_t;
-
-// Song Part Structure
-typedef struct {
-    const note_event_t* events;  // Array ของโน๊ต
-    uint16_t event_count;        // จำนวนโน๊ต
-    const char* part_name;       // ชื่อ part
-} song_part_t;
-
-// Complete Song Structure  
-typedef struct {
-    const char* song_name;      // ชื่อเพลง
-    uint8_t song_id;           // รหัสเพลง
-    uint8_t tempo_bpm;         // Beats per minute
-    uint8_t part_count;        // จำนวน parts
-    const song_part_t* parts;  // Array ของ parts
-} orchestra_song_t;
+#include "orchestra_types.h"
 
 // =============================================================
 // 🎵 SONG 1: Twinkle Twinkle Little Star (4 Parts)
@@ -395,6 +372,10 @@ static const song_part_t mary_parts[] = {
 // 🎵 All Songs Database
 // =============================================================
 
+// Include Thailand song definitions after type definitions
+#include "Thailand.h"
+#include "titanic_orchestra.h"
+
 static const orchestra_song_t all_songs[] = {
     {
         .song_name = "Twinkle Twinkle Little Star",
@@ -406,7 +387,7 @@ static const orchestra_song_t all_songs[] = {
     {
         .song_name = "Happy Birthday",
         .song_id = SONG_HAPPY_BIRTHDAY,
-        .tempo_bpm = 100,
+        .tempo_bpm = 120,
         .part_count = 3,
         .parts = birthday_parts
     },
@@ -416,6 +397,20 @@ static const orchestra_song_t all_songs[] = {
         .tempo_bpm = 140,
         .part_count = 2,
         .parts = mary_parts
+    },
+    {
+        .song_name = "Thailand",
+        .song_id = SONG_THAILAND,
+        .tempo_bpm = 116,
+        .part_count = 4,
+        .parts = Thailand_parts
+    },
+    {
+        .song_name = "Movie_Themes_-_Titanic_-_My_Heart_Will_Go_On_(Techno_Mix)",
+        .song_id = SONG_MOVIE_THEMES___TITANIC___MY_HEART_WILL_GO_ON_TECHNO_MIX,
+        .tempo_bpm = 135,
+        .part_count = 4,
+        .parts = Movie_Themes___Titanic___My_Heart_Will_Go_On_Techno_Mix_parts
     }
 };
 
