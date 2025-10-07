@@ -31,8 +31,8 @@ typedef enum {
     SONG_HAPPY_BIRTHDAY = 2, // Happy Birthday (3 parts)  
     SONG_CANON_IN_D = 3,    // Canon in D (4 parts)
     SONG_MARY_LAMB = 4,     // Mary Had a Little Lamb (2 parts)
-    SONG_THAILAND = 52,     // Thailand (4 parts)
-    SONG_MOVIE_THEMES___TITANIC___MY_HEART_WILL_GO_ON_TECHNO_MIX = 57  // Titanic (4 parts)
+    SONG_THAILAND = 5,      // Thailand (4 parts)
+    SONG_MOVIE_THEMES___TITANIC___MY_HEART_WILL_GO_ON_TECHNO_MIX = 6  // Titanic (4 parts)
 } song_id_t;
 
 // Musician Parts (แต่ละ ESP32 จะรับผิดชอบ part ใดpart หนึ่ง)
@@ -58,6 +58,7 @@ typedef struct {
 
 // Note definitions (MIDI note numbers)
 // Octave 0
+#define NOTE_CS0  13   // C#0
 #define NOTE_DS0  15   // D#0
 #define NOTE_FS0  18   // F#0
 #define NOTE_GS0  20   // G#0
