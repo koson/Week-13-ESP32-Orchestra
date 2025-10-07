@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+C:/Week-13-ESP32-Orchestra/ESP32_Orchestra_IDF/musician/build/CMakeFiles/bootloader
+C:/Week-13-ESP32-Orchestra/ESP32_Orchestra_IDF/musician/build/CMakeFiles/bootloader.rule
+C:/Week-13-ESP32-Orchestra/ESP32_Orchestra_IDF/musician/build/CMakeFiles/bootloader-complete.rule
+C:/Week-13-ESP32-Orchestra/ESP32_Orchestra_IDF/musician/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+C:/Week-13-ESP32-Orchestra/ESP32_Orchestra_IDF/musician/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+C:/Week-13-ESP32-Orchestra/ESP32_Orchestra_IDF/musician/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+C:/Week-13-ESP32-Orchestra/ESP32_Orchestra_IDF/musician/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+C:/Week-13-ESP32-Orchestra/ESP32_Orchestra_IDF/musician/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+C:/Week-13-ESP32-Orchestra/ESP32_Orchestra_IDF/musician/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+C:/Week-13-ESP32-Orchestra/ESP32_Orchestra_IDF/musician/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule

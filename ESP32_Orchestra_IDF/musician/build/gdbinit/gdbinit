@@ -1,0 +1,2 @@
+source C:/Week-13-ESP32-Orchestra/ESP32_Orchestra_IDF/musician/build/gdbinit/symbols
+source C:/Week-13-ESP32-Orchestra/ESP32_Orchestra_IDF/musician/build/gdbinit/connect
