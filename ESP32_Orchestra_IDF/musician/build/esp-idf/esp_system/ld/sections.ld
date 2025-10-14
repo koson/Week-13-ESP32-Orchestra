@@ -1,6 +1,6 @@
 /* Automatically generated file; DO NOT EDIT */
 /* Espressif IoT Development Framework Linker Script */
-/* Generated from: C:\Week-13-ESP32-Orchestra\ESP32_Orchestra_IDF\musician\build\esp-idf\esp_system\ld\sections.ld.in */
+/* Generated from: D:\My_work\W13-ESP32-Orchestra\Week-13-ESP32-Orchestra\ESP32_Orchestra_IDF\musician\build\esp-idf\esp_system\ld\sections.ld.in */
 
 /*
 

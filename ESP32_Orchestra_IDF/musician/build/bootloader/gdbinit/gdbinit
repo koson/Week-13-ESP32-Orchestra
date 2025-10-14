@@ -1,2 +1,2 @@
-source C:/Week-13-ESP32-Orchestra/ESP32_Orchestra_IDF/musician/build/bootloader/gdbinit/symbols
-source C:/Week-13-ESP32-Orchestra/ESP32_Orchestra_IDF/musician/build/bootloader/gdbinit/connect
+source D:/My_work/W13-ESP32-Orchestra/Week-13-ESP32-Orchestra/ESP32_Orchestra_IDF/musician/build/bootloader/gdbinit/symbols
+source D:/My_work/W13-ESP32-Orchestra/Week-13-ESP32-Orchestra/ESP32_Orchestra_IDF/musician/build/bootloader/gdbinit/connect

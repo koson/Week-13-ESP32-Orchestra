@@ -1,4 +1,4 @@
-# Install script for directory: C:/Week-13-ESP32-Orchestra/ESP32_Orchestra_IDF/musician
+# Install script for directory: D:/My_work/W13-ESP32-Orchestra/Week-13-ESP32-Orchestra/ESP32_Orchestra_IDF/musician
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,12 +34,12 @@ endif()
 
 # Set path to fallback-tool for dependency-resolution.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "C:/Users/Kunakorn/.espressif/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-objdump.exe")
+  set(CMAKE_OBJDUMP "D:/tools/tools/xtensa-esp-elf/esp-14.2.0_20241119/xtensa-esp-elf/bin/xtensa-esp32-elf-objdump.exe")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Week-13-ESP32-Orchestra/ESP32_Orchestra_IDF/musician/build/esp-idf/cmake_install.cmake")
+  include("D:/My_work/W13-ESP32-Orchestra/Week-13-ESP32-Orchestra/ESP32_Orchestra_IDF/musician/build/esp-idf/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -57,6 +57,6 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-  file(WRITE "C:/Week-13-ESP32-Orchestra/ESP32_Orchestra_IDF/musician/build/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "D:/My_work/W13-ESP32-Orchestra/Week-13-ESP32-Orchestra/ESP32_Orchestra_IDF/musician/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
